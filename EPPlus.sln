@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{84BB37E9-CE27-48E0-88F6-A741A46D5883}"
+	ProjectSection(SolutionItems) = preProject
+		ExcelPackage.vsmdi = ExcelPackage.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPPlus", "EPPlus\EPPlus.csproj", "{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelExtentions", "ExcelExtentions\ExcelExtentions.csproj", "{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelExtentions.Samples", "ExcelExtentions.Samples\ExcelExtentions.Samples.csproj", "{20910709-0DE3-4CDA-AE2E-ECDDC581D305}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Debug|x86.Build.0 = Debug|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Release|x86.ActiveCfg = Release|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Release|x86.Build.0 = Release|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Debug|x86.Build.0 = Debug|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Release|x86.ActiveCfg = Release|Any CPU
+		{9A7F73BB-2E9F-48F8-A1FA-B17725B34D6C}.Release|x86.Build.0 = Release|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Debug|x86.Build.0 = Debug|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Release|x86.ActiveCfg = Release|Any CPU
+		{20910709-0DE3-4CDA-AE2E-ECDDC581D305}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ExcelPackage.vsmdi
+	EndGlobalSection
+EndGlobal

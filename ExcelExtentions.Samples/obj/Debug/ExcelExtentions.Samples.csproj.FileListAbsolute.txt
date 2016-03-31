@@ -1,0 +1,24 @@
+c:\users\chenyi\documents\visual studio 2015\Projects\ExcelExtentions\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.Samples.exe.config
+c:\users\chenyi\documents\visual studio 2015\Projects\ExcelExtentions\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.Samples.exe
+c:\users\chenyi\documents\visual studio 2015\Projects\ExcelExtentions\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.Samples.pdb
+c:\users\chenyi\documents\visual studio 2015\Projects\ExcelExtentions\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.dll
+c:\users\chenyi\documents\visual studio 2015\Projects\ExcelExtentions\ExcelExtentions.Samples\bin\Debug\EPPlus.dll
+c:\users\chenyi\documents\visual studio 2015\Projects\ExcelExtentions\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.pdb
+c:\users\chenyi\documents\visual studio 2015\Projects\ExcelExtentions\ExcelExtentions.Samples\bin\Debug\EPPlus.xml
+c:\users\chenyi\documents\visual studio 2015\Projects\ExcelExtentions\ExcelExtentions.Samples\obj\Debug\ExcelExtentions.Samples.csprojResolveAssemblyReference.cache
+c:\users\chenyi\documents\visual studio 2015\Projects\ExcelExtentions\ExcelExtentions.Samples\obj\Debug\ExcelExtentions.Samples.exe
+c:\users\chenyi\documents\visual studio 2015\Projects\ExcelExtentions\ExcelExtentions.Samples\obj\Debug\ExcelExtentions.Samples.pdb
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.Samples.exe.config
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.Samples.exe
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.Samples.pdb
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.dll
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\bin\Debug\EPPlus.dll
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.pdb
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\bin\Debug\EPPlus.pdb
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\bin\Debug\EPPlus.xml
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\obj\Debug\ExcelExtentions.Samples.csprojResolveAssemblyReference.cache
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\obj\Debug\ExcelExtentions.Samples.exe
+C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\ExcelExtentions.Samples\obj\Debug\ExcelExtentions.Samples.pdb
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\bin\Debug\ExcelExtentions.Samples.exe.config
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\obj\Debug\ExcelExtentions.Samples.exe
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\obj\Debug\ExcelExtentions.Samples.pdb
