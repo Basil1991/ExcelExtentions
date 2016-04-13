@@ -7,12 +7,14 @@ namespace ExcelExtentions {
         public static void SetPictureToCell(string picPath, ExcelWorksheet workSheet, int row, int col, int magicToken) {
             using (Bitmap img = new Bitmap(picPath)) {
                 float hr = img.HorizontalResolution;
+                #region if DoAdjustDrawings=true.
                 //float percent = 1;
                 //if (hr != 96) {
                 //    percent = 96 / hr;
                 //}
                 //float picX = img.Width * percent;
                 //float picY = img.Height * percent;
+                #endregion
                 float picX = img.Width;
                 float picY = img.Height;
 
@@ -26,11 +28,12 @@ namespace ExcelExtentions {
                     rowHeight = pHeight / 0.9;
                     workSheet.Row(row).Height = rowHeight;
                 }
-
                 //I don't know why should double /2.....
                 int offSetX = (int)((colWidth - pWidth) / 2 / 2);
                 int offSetY = (int)((rowHeight - pHeight) / 2);
                 offSetX = offSetX > 0 ? offSetX : 0;
+
+
 
                 var pCell = workSheet.Drawings.AddPicture(Guid.NewGuid().ToString(), img, magicToken);
                 //var pCell = workSheet.Drawings.AddPicture(Guid.NewGuid().ToString(), img);

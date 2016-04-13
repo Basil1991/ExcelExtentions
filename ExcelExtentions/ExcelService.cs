@@ -114,6 +114,9 @@ namespace ExcelExtentions {
                 case ColumnValueType.Time:
                     col.Style.Numberformat.Format = "hh:mm:ss";
                     break;
+                //case ColumnValueType.Currency:
+                //    col.Style.Numberformat.Format = string.Format("{0}#,##0.00",code);
+                //    break;
                 default: break;
             }
         }
@@ -163,6 +166,11 @@ namespace ExcelExtentions {
                         cell.Value = "";
                     }
                     break;
+                case ColumnValueType.Currency:
+                    var t = splitCurrencyValue(value.ToString());
+                    cell.Style.Numberformat.Format = string.Format("[${0}] #0.00", t.Item1);
+                    cell.Value = t.Item2;
+                    break;
                 default: break;
             }
         }
@@ -173,6 +181,25 @@ namespace ExcelExtentions {
                 newFile = new FileInfo(fileName);
             }
             ep.SaveAs(newFile);
+        }
+        private static Tuple<string, decimal> splitCurrencyValue(string value) {
+            string code = "";
+            int firstIndexOfDigit = 0;
+            for (int i = 0; i < value.Length; i++) {
+                if (char.IsLetter(value[i])) {
+                    code += value[i];
+                }
+                else if (char.IsDigit(value[i])) {
+                    firstIndexOfDigit = i;
+                    break;
+                }
+            }
+            if (firstIndexOfDigit == 0) {
+                return new Tuple<string, decimal>(code, (decimal)0.00);
+            }
+            else {
+                return new Tuple<string, decimal>(code, Decimal.Parse(value.Substring(firstIndexOfDigit)));
+            }
         }
     }
 }

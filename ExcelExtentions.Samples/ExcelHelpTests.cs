@@ -58,11 +58,12 @@ namespace ExcelExtentions.Samples {
         }
         private Argument.ColumnArgument[] getNormalColArgs() {
             Argument.ColumnArgument[] colArgs = new Argument.ColumnArgument[] {
-            new Argument.ColumnArgument( 10, Argument.ColumnValueType.Int),
-            new Argument.ColumnArgument(20, Argument.ColumnValueType.String),
-            new Argument.ColumnArgument(30, Argument.ColumnValueType.DateTime),
-            new Argument.ColumnArgument(40, Argument.ColumnValueType.Double),
-            new Argument.ColumnArgument(80, Argument.ColumnValueType.Picture)
+            new Argument.ColumnArgument(Argument.ColumnValueType.Int),
+            new Argument.ColumnArgument(Argument.ColumnValueType.String),
+            new Argument.ColumnArgument(Argument.ColumnValueType.DateTime),
+            new Argument.ColumnArgument(Argument.ColumnValueType.Double),
+            new Argument.ColumnArgument(Argument.ColumnValueType.Picture),
+            new Argument.ColumnArgument(Argument.ColumnValueType.Currency),
             };
             return colArgs;
         }
@@ -73,6 +74,7 @@ namespace ExcelExtentions.Samples {
             dt.Columns.Add("Datetime");
             dt.Columns.Add("DoubleValue");
             dt.Columns.Add("Pictures");
+            dt.Columns.Add("Money");
 
             for (int i = 0; i < 100 * 1; i++) {
                 DataRow nRow = dt.NewRow();
@@ -88,6 +90,7 @@ namespace ExcelExtentions.Samples {
                 else {
                     nRow["Pictures"] = "../../Pictures/noPic.jpg";
                 }
+                nRow["Money"] = "CAD 12.11";
                 dt.Rows.Add(nRow);
             }
             ExcelHelp eh = new ExcelHelp();
@@ -111,7 +114,8 @@ namespace ExcelExtentions.Samples {
                 Name = a.Name,
                 BirthDay = a.BirthDate,
                 Height = a.Height,
-                Pic = a.PicturePath
+                Pic = a.PicturePath,
+                Money="USD 123.22"
             }).ToList();
 
             return d;
@@ -122,7 +126,6 @@ namespace ExcelExtentions.Samples {
             dList.Add(getDynamic());
             return dList;
         }
-
     }
     public class User {
         public User() {

@@ -50,14 +50,34 @@ namespace ExcelExtentions.Argument {
         Double,
         Picture,
         IntNull,
-        DoubleNull
+        DoubleNull,
+        Currency,
     }
     public class ColumnArgument {
-        public ColumnArgument(int width, ColumnValueType columnValueType) {
+        public ColumnArgument(ColumnValueType columnValueType, int width) {
             this.Width = width;
+            this.ColumnValueType = columnValueType;
+        }
+        public ColumnArgument(ColumnValueType columnValueType) {
+            this.Width = getDefaultWidthByColumnValueType(columnValueType);
             this.ColumnValueType = columnValueType;
         }
         public int Width { get; private set; }
         public ColumnValueType ColumnValueType { get; private set; }
+        private int getDefaultWidthByColumnValueType(ColumnValueType type) {
+            switch (type) {
+                case ColumnValueType.Currency:
+                case ColumnValueType.Date:
+                case ColumnValueType.Time: return 12;
+                case ColumnValueType.DateTime: return 20;
+                case ColumnValueType.Double:
+                case ColumnValueType.DoubleNull: return 10;
+                case ColumnValueType.String: return 18;
+                case ColumnValueType.Int:
+                case ColumnValueType.IntNull: return 7;
+                case ColumnValueType.Picture: return 25;
+                default: return 10;
+            }
+        }
     }
 }
