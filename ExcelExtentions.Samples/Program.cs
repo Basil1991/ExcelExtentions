@@ -8,9 +8,9 @@ namespace ExcelExtentions.Samples {
     class Program {
         static void Main(string[] args) {
             new ExcelHelpTests().GetByDt();
-            new ExcelHelpTests().GetByDs();
-            new ExcelHelpTests().GetDynamic();
-            new ExcelHelpTests().GetByDynamicList();
+            //new ExcelHelpTests().GetByDs();
+            //new ExcelHelpTests().GetDynamic();
+            //new ExcelHelpTests().GetByDynamicList();
         }
     }
 }

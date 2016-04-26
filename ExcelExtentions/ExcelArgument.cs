@@ -39,7 +39,8 @@ namespace ExcelExtentions.Argument {
         public string SheetName { get; private set; }
     }
     public enum ClassType {
-        Default = 1
+        Default = 1,
+        AllCenter = 2
     }
     public enum ColumnValueType {
         String,

@@ -51,9 +51,10 @@ namespace ExcelExtentions {
             int rowNumber = 1;
             worksheet.Row(rowNumber).Height = arg.TitleHeight;
             for (int i = 0; i < colCount; ++i) {
-                worksheet.Column(i + 1).Width = arg.ColumnArguments[i].Width;
                 worksheet.Cells[rowNumber, i + 1].Value = dt.Columns[i].ColumnName;
-                setColStyle(worksheet.Column(i + 1), arg.ColumnArguments[i].ColumnValueType);
+                ExcelStyleProcessor.SetColStyle(worksheet, i, arg);
+                //worksheet.Column(i + 1).Width = arg.ColumnArguments[i].Width;
+                //setColStyle(worksheet.Column(i + 1), arg.ColumnArguments[i].ColumnValueType);
             }
             for (int i = 0; i < rowCount; ++i) {
                 rowNumber++;
@@ -78,9 +79,10 @@ namespace ExcelExtentions {
             int rowNumber = 1;
             worksheet.Row(rowNumber).Height = arg.TitleHeight;
             for (int i = 0; i < colCount; ++i) {
-                worksheet.Column(i + 1).Width = arg.ColumnArguments[i].Width;
                 worksheet.Cells[rowNumber, i + 1].Value = properties[i].Name;
-                setColStyle(worksheet.Column(i + 1), arg.ColumnArguments[i].ColumnValueType);
+                ExcelStyleProcessor.SetColStyle(worksheet, i, arg);
+                //worksheet.Column(i + 1).Width = arg.ColumnArguments[i].Width;
+                //setColStyle(worksheet.Column(i + 1), arg.ColumnArguments[i].ColumnValueType);
             }
             foreach (var l in list) {
                 rowNumber++;

@@ -38,7 +38,7 @@ namespace ExcelExtentions.Samples {
         public void GetDynamic() {
             var d = getDynamic();
             Argument.ColumnArgument[] colArgs = getNormalColArgs();
-            Argument.SheetArgument sheetArgs = new Argument.SheetArgument(colArgs, "TestSheet");
+            Argument.SheetArgument sheetArgs = new Argument.SheetArgument( colArgs, "TestSheet", classType: ClassType.AllCenter);
             List<Argument.SheetArgument> sheetsArgs = new List<Argument.SheetArgument>() { sheetArgs };
             Argument.ExcelArgument excelArgs = new Argument.ExcelArgument(string.Format(outPutDirPath + "_ByDynamic.xlsx"), sheetsArgs);
             new ExcelHelp().Get(d, excelArgs);
@@ -76,7 +76,7 @@ namespace ExcelExtentions.Samples {
             dt.Columns.Add("Pictures");
             dt.Columns.Add("Money");
 
-            for (int i = 0; i < 100 * 10; i++) {
+            for (int i = 0; i < 1 * 10; i++) {
                 DataRow nRow = dt.NewRow();
                 nRow["ID"] = i;
                 nRow["Text"] = "123123123" + i;
@@ -89,7 +89,7 @@ namespace ExcelExtentions.Samples {
                 }
                 else {
                     //nRow["Pictures"] = "http://www.52ij.com/uploads/allimg/160317/1110104P8-4.jpg";
-                    nRow["Pictures"] = string.Format("../../Pictures/NO.jpg", 3);
+                    nRow["Pictures"] = string.Format("../../Pictures/9.png");
                 }
                 nRow["Money"] = "CAD 12.11";
                 dt.Rows.Add(nRow);

@@ -2,18 +2,19 @@
 <package >
   <metadata>
     <id>ExcelExtentions</id>
-    <version>0.0.1.3</version>
+    <version>1.0.0.6</version>
     <title>ExcelExtentions</title>
     <authors>Basil</authors>
     <owners>Basil</owners>
     <projectUrl>https://github.com/Basil1991/ExcelExtentions</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>ExcelExtentions base on eppuls</description>
-    <releaseNotes>Picture size in colwidth</releaseNotes>
+    <description>ExcelExtentions base on Epplus</description>
+    <releaseNotes>AllCenter add</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>Excel Export</tags>
     <dependencies>
-      <dependency id="ExcelExtentions.Dependency.Epplus" version="1.0.0.0" />
+      <dependency id="ExcelExtentions.Dependency.Epplus" version="1.0.0" />
     </dependencies>
   </metadata>
+
 </package>
