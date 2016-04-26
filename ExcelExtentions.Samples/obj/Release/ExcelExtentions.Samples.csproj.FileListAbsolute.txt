@@ -1,0 +1,11 @@
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\bin\Release\ExcelExtentions.Samples.exe.config
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\bin\Release\ExcelExtentions.Samples.exe
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\bin\Release\ExcelExtentions.Samples.pdb
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\bin\Release\ExcelExtentions.dll
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\bin\Release\EPPlus.dll
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\bin\Release\ExcelExtentions.pdb
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\bin\Release\EPPlus.pdb
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\bin\Release\EPPlus.xml
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\obj\Release\ExcelExtentions.Samples.csprojResolveAssemblyReference.cache
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\obj\Release\ExcelExtentions.Samples.exe
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions.Samples\obj\Release\ExcelExtentions.Samples.pdb

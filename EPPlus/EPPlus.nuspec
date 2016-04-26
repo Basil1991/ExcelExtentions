@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ExcelExtentions.Dependency.Epplus</id>
+    <version>1.0.0.0</version>
+    <title>ExcelExtentions.Dependency.Epplus</title>
+    <authors>Basil</authors>
+    <owners>Basil</owners>
+    <projectUrl>https://github.com/Basil1991/ExcelExtentions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Dependency Epplus 4.0.5.0</description>
+    <releaseNotes>INIT</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Epplus ExcelExtentions</tags>
+  </metadata>
+</package>

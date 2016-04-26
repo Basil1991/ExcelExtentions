@@ -76,7 +76,7 @@ namespace ExcelExtentions.Samples {
             dt.Columns.Add("Pictures");
             dt.Columns.Add("Money");
 
-            for (int i = 0; i < 100 * 1; i++) {
+            for (int i = 0; i < 100 * 10; i++) {
                 DataRow nRow = dt.NewRow();
                 nRow["ID"] = i;
                 nRow["Text"] = "123123123" + i;
@@ -88,7 +88,8 @@ namespace ExcelExtentions.Samples {
                     nRow["Pictures"] = string.Format("../../Pictures/{0}.jpg", imgSeed);
                 }
                 else {
-                    nRow["Pictures"] = "../../Pictures/noPic.jpg";
+                    //nRow["Pictures"] = "http://www.52ij.com/uploads/allimg/160317/1110104P8-4.jpg";
+                    nRow["Pictures"] = string.Format("../../Pictures/NO.jpg", 3);
                 }
                 nRow["Money"] = "CAD 12.11";
                 dt.Rows.Add(nRow);
@@ -115,7 +116,7 @@ namespace ExcelExtentions.Samples {
                 BirthDay = a.BirthDate,
                 Height = a.Height,
                 Pic = a.PicturePath,
-                Money="USD 123.22"
+                Money = "USD 123.22"
             }).ToList();
 
             return d;

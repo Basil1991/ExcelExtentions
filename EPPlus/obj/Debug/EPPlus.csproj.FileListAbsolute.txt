@@ -4,3 +4,8 @@ C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\EPPlus\bin\Debug\EPPlus.pdb
 C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\EPPlus\obj\Debug\EPPlus.csprojResolveAssemblyReference.cache
 C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\EPPlus\obj\Debug\EPPlus.dll
 C:\Users\ChenYi\Desktop\Work\epplus_4413f668bda6\EPPlus\obj\Debug\EPPlus.pdb
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\bin\Debug\EPPlus.XML
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\bin\Debug\EPPlus.dll
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\bin\Debug\EPPlus.pdb
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\obj\Debug\EPPlus.dll
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\obj\Debug\EPPlus.pdb

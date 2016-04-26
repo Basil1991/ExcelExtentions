@@ -1,0 +1,8 @@
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions\bin\Release\ExcelExtentions.dll
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions\bin\Release\ExcelExtentions.pdb
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions\bin\Release\EPPlus.dll
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions\bin\Release\EPPlus.pdb
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions\bin\Release\EPPlus.xml
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions\obj\Release\ExcelExtentions.csprojResolveAssemblyReference.cache
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions\obj\Release\ExcelExtentions.dll
+C:\Users\ChenYi\GIT\ExcelExtentions\ExcelExtentions\obj\Release\ExcelExtentions.pdb

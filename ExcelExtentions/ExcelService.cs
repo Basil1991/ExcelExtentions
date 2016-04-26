@@ -142,7 +142,19 @@ namespace ExcelExtentions {
                     break;
                 case ColumnValueType.Picture:
                     string picPath = value.ToString();
-                    if (File.Exists(picPath)) {
+                    if (Uri.IsWellFormedUriString(picPath, UriKind.Absolute)) {
+                        try {
+                            System.Net.WebRequest webreq = System.Net.WebRequest.Create(picPath);
+                            System.Net.WebResponse webres = webreq.GetResponse();
+                            var stream = webres.GetResponseStream();
+                            ExcelPictureProcessor.SetPictureToCell(stream, workSheet, row, col, magicToken);
+                            magicToken++;
+                        }
+                        catch {
+                            cell.Value = "No Pic";
+                        }
+                    }
+                    else if (File.Exists(picPath)) {
                         ExcelPictureProcessor.SetPictureToCell(picPath, workSheet, row, col, magicToken);
                         magicToken++;
                     }

@@ -1,0 +1,6 @@
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\bin\Release\EPPlus.XML
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\bin\Release\EPPlus.dll
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\bin\Release\EPPlus.pdb
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\obj\Release\EPPlus.csprojResolveAssemblyReference.cache
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\obj\Release\EPPlus.dll
+C:\Users\ChenYi\GIT\ExcelExtentions\EPPlus\obj\Release\EPPlus.pdb
