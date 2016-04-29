@@ -5,16 +5,28 @@ using ExcelExtentions.Argument;
 namespace ExcelExtentions {
     public class ExcelHelp {
         public void Get(DataTable dt, ExcelArgument arg) {
-            ExcelService.Export(dt, arg);
+            ExcelExport.Export(dt, arg);
         }
         public void Get(DataSet ds, ExcelArgument arg) {
-            ExcelService.Export(ds, arg);
+            ExcelExport.Export(ds, arg);
         }
         public void Get(dynamic list, ExcelArgument arg) {
-            ExcelService.Export(list, arg);
+            ExcelExport.Export(list, arg);
         }
         public void Get(List<dynamic> list, ExcelArgument arg) {
-            ExcelService.Export(list, arg);
+            ExcelExport.Export(list, arg);
+        }
+        public void GetFromTemplate(DataTable dt, string tempPath, string outPutPath) {
+            ExcelExportFromTemplate.ExportFromTemp(dt, tempPath, outPutPath);
+        }
+        public void GetFromTemplate(dynamic list, string tempPath, string outPutPath) {
+            ExcelExportFromTemplate.ExportFromTemp(list, tempPath, outPutPath);
+        }
+        public void GetFromTemplate(List<dynamic> list, string tempPath, string outPutPath) {
+            ExcelExportFromTemplate.ExportFromTemp(list, tempPath, outPutPath);
+        }
+        public void GetFromTemplate(DataSet ds, string tempPath, string outPutPath) {
+            ExcelExportFromTemplate.ExportFromTemp(ds, tempPath, outPutPath);
         }
     }
 }

@@ -2,14 +2,14 @@
 <package >
   <metadata>
     <id>ExcelExtentions</id>
-    <version>1.0.0.6</version>
+    <version>1.0.0.8</version>
     <title>ExcelExtentions</title>
     <authors>Basil</authors>
     <owners>Basil</owners>
     <projectUrl>https://github.com/Basil1991/ExcelExtentions</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>ExcelExtentions base on Epplus</description>
-    <releaseNotes>AllCenter add</releaseNotes>
+    <releaseNotes>AllCenter add(fix picture null bug)</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>Excel Export</tags>
     <dependencies>

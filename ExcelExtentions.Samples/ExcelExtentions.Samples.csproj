@@ -52,6 +52,7 @@
   <ItemGroup>
     <Folder Include="OutPutDir\" />
     <Folder Include="Pictures\" />
+    <Folder Include="Temp\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExcelExtentions\ExcelExtentions.csproj">

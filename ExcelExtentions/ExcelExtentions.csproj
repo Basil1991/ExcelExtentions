@@ -41,11 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExcelCellValueProcessor.cs" />
+    <Compile Include="ExcelCommonService.cs" />
+    <Compile Include="ExcelExportFromTemplate.cs" />
+    <Compile Include="ExcelExportSwift.cs" />
+    <Compile Include="ExcelSheetCreator.cs" />
     <Compile Include="ExcelStyleProcessor.cs" />
     <Compile Include="ExcelHelp.cs" />
     <Compile Include="ExcelPictureProcessor.cs" />
-    <Compile Include="ExcelService.cs" />
+    <Compile Include="ExcelExport.cs" />
     <Compile Include="ExcelArgument.cs" />
+    <Compile Include="ExcelToObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

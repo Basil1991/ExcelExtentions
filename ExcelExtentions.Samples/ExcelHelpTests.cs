@@ -12,11 +12,10 @@ namespace ExcelExtentions.Samples {
     public class ExcelHelpTests {
         private string outPutDirPath = "../../OutPutDir/" + DateTime.Now.Millisecond.ToString();
         public static string PicPath = "../../Pictures/1.jpg";
+        private string tempPath = "../../Temp/temp.xlsx";
         public void GetByDt() {
             var dt = getDt();
-
             Argument.ColumnArgument[] colArgs = getNormalColArgs();
-
             Argument.SheetArgument sheetArgs = new Argument.SheetArgument(colArgs, "TestSheet");
             List<Argument.SheetArgument> sheetsArgs = new List<Argument.SheetArgument>() { sheetArgs };
             Argument.ExcelArgument excelArgs = new Argument.ExcelArgument(string.Format(outPutDirPath + "_ByDT.xlsx"), sheetsArgs);
@@ -38,7 +37,7 @@ namespace ExcelExtentions.Samples {
         public void GetDynamic() {
             var d = getDynamic();
             Argument.ColumnArgument[] colArgs = getNormalColArgs();
-            Argument.SheetArgument sheetArgs = new Argument.SheetArgument( colArgs, "TestSheet", classType: ClassType.AllCenter);
+            Argument.SheetArgument sheetArgs = new Argument.SheetArgument(colArgs, "TestSheet", classType: ClassType.AllCenter);
             List<Argument.SheetArgument> sheetsArgs = new List<Argument.SheetArgument>() { sheetArgs };
             Argument.ExcelArgument excelArgs = new Argument.ExcelArgument(string.Format(outPutDirPath + "_ByDynamic.xlsx"), sheetsArgs);
             new ExcelHelp().Get(d, excelArgs);
@@ -55,6 +54,22 @@ namespace ExcelExtentions.Samples {
             List<Argument.SheetArgument> sheetsArgs = new List<Argument.SheetArgument>() { sheetArgs, sheetArgs2 };
             Argument.ExcelArgument excelArgs = new Argument.ExcelArgument(string.Format(outPutDirPath + "_ByDynamics.xlsx"), sheetsArgs);
             new ExcelHelp().Get(ds, excelArgs);
+        }
+        public void GetByDtFromTemp() {
+            var dt = getDt();
+            new ExcelHelp().GetFromTemplate(dt, tempPath, outPutDirPath + "_ByDTFromTemp.xlsx");
+        }
+        public void GetByDsFromTemp() {
+            var ds = getDs();
+            new ExcelHelp().GetFromTemplate(ds,tempPath, outPutDirPath + "_ByDsFromTemp.xlsx");
+        }
+        public void GetByDynamicFromTemp() {
+            var list = getDynamic();
+            new ExcelHelp().GetFromTemplate(list, tempPath, outPutDirPath + "_ByDynamicFromTemp.xlsx");
+        }
+        public void GetByDynamicListFromTemp() {
+            var list = getDynamics();
+            new ExcelHelp().GetFromTemplate(list, tempPath, outPutDirPath + "_ByDynamicsFromTemp.xlsx");
         }
         private Argument.ColumnArgument[] getNormalColArgs() {
             Argument.ColumnArgument[] colArgs = new Argument.ColumnArgument[] {
@@ -76,7 +91,7 @@ namespace ExcelExtentions.Samples {
             dt.Columns.Add("Pictures");
             dt.Columns.Add("Money");
 
-            for (int i = 0; i < 1 * 10; i++) {
+            for (int i = 0; i < 1 * 100; i++) {
                 DataRow nRow = dt.NewRow();
                 nRow["ID"] = i;
                 nRow["Text"] = "123123123" + i;
